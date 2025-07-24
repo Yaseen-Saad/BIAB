@@ -1,0 +1,442 @@
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    .hero-title {
+        font-size: var(--h2-desktop);
+    }
+    
+    .hero-subtitle {
+        font-size: var(--body-desktop);
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: var(--spacing-md);
+    }
+    
+    .impact-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .join-benefits {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--spacing-md);
+    }
+    
+    .requirements-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .product-detail {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    :root {
+        --h1-desktop: var(--h1-mobile);
+        --h2-desktop: var(--h2-mobile);
+        --h3-desktop: var(--h3-mobile);
+        --h4-desktop: var(--h4-mobile);
+        --body-desktop: var(--body-mobile);
+    }
+    
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    section {
+        padding: var(--spacing-xxl) 0;
+    }
+    
+    /* Header Mobile */
+    .nav {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        border-top: 1px solid var(--soft-sand);
+        transform: translateY(-100vh);
+        transition: transform var(--transition-normal);
+        z-index: 999;
+    }
+    
+    .nav.open {
+        transform: translateY(0);
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        padding: var(--spacing-md);
+        gap: var(--spacing-xs);
+    }
+    
+    .nav-list a {
+        display: block;
+        padding: var(--spacing-sm);
+        border-bottom: 1px solid var(--soft-sand);
+    }
+    
+    /* Join Us Section Mobile */
+    .join-benefits {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .benefit-card {
+        padding: var(--spacing-md);
+    }
+    
+    .benefit-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .requirements-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xs);
+    }
+    
+    .requirement-item {
+        padding: var(--spacing-sm);
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-xs);
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    .join-form {
+        padding: var(--spacing-md);
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .menu-toggle.open span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu-toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    /* Hero Mobile */
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-actions .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* Grid adjustments */
+    .impact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .artisans-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .volunteer-roles {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+        text-align: center;
+    }
+    
+    /* Form adjustments */
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    .donation-tabs {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+    
+    .amount-buttons {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    .donation-type {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .hero-actions {
+        gap: var(--spacing-sm);
+    }
+    
+    .cart-actions {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .cart-actions .btn {
+        width: 100%;
+    }
+    
+    /* Modal adjustments */
+    .modal-content {
+        max-width: 95vw;
+        margin: var(--spacing-sm);
+    }
+    
+    .product-detail {
+        padding: var(--spacing-md);
+    }
+    
+    .cart-items {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+    
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+    
+    .cart-item-details {
+        width: 100%;
+    }
+    
+    .cart-item-controls {
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    /* Newsletter */
+    .newsletter-input {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    /* Impact stats mobile */
+    .impact-stats {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    /* Checkout mobile */
+    .checkout-steps {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .step {
+        margin: 0;
+    }
+    
+    /* Typography mobile */
+    .hero-title {
+        font-size: var(--h1-mobile);
+        line-height: 1.1;
+    }
+    
+    .hero-subtitle {
+        font-size: var(--body-mobile);
+    }
+    
+    .metric-number {
+        font-size: var(--h3-mobile);
+    }
+    
+    .stat-number {
+        font-size: var(--h4-mobile);
+    }
+    
+    /* Utility classes mobile */
+    .desktop-only {
+        display: none;
+    }
+    
+    .mobile-only {
+        display: block;
+    }
+    
+    /* Message container mobile */
+    .message-container {
+        right: var(--spacing-sm);
+        left: var(--spacing-sm);
+        max-width: none;
+    }
+    
+    /* Collection points mobile */
+    .collection-points {
+        margin-bottom: var(--spacing-md);
+    }
+    
+    /* Product thumbnails mobile */
+    .product-thumbnails {
+        justify-content: center;
+    }
+    
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .logo h1 {
+        font-size: 18px;
+    }
+    
+    .header-content {
+        min-height: 70px;
+    }
+    
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .amount-buttons {
+        grid-template-columns: 1fr;
+    }
+    
+    .impact-metric {
+        padding: var(--spacing-md);
+    }
+    
+    .artisan-card {
+        padding: var(--spacing-md);
+    }
+    
+    .role-card {
+        padding: var(--spacing-md);
+    }
+    
+    .donation-form,
+    .contact-form,
+    .volunteer-form {
+        padding: var(--spacing-md);
+    }
+    
+    .checkout-section {
+        padding: var(--spacing-md);
+    }
+}
+
+/* Landscape phone adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .hero-title {
+        font-size: var(--h3-desktop);
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .hero-subtitle {
+        font-size: var(--body-desktop);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .hero-actions {
+        gap: var(--spacing-sm);
+    }
+}
+
+/* Print styles */
+@media print {
+    .header,
+    .footer,
+    .cart-icon,
+    .language-switcher,
+    .menu-toggle,
+    .modal,
+    .btn,
+    button {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: black;
+        background: white;
+    }
+    
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+    
+    section {
+        padding: 20pt 0;
+        page-break-inside: avoid;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+    
+    .hero {
+        min-height: auto;
+        padding: 40pt 0;
+    }
+    
+    .hero-background {
+        display: none;
+    }
+    
+    .hero::before {
+        display: none;
+    }
+    
+    .hero-content {
+        color: black;
+    }
+}

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رزق الهوانم - Rizq Al-Hawanem - Empowering Women Through Handmade Crafts</title>
+    <meta name="description" content="رزق الهوانم - منصة تمكن النساء المصريات من خلال الحرف اليدوية المستدامة. تسوقي منتجات فريدة مصنوعة يدوياً مع دعم تأثير اجتماعي مجدي. Empowering Egyptian women through sustainable handmade crafts.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&family=Cairo:wght@600;700&family=Tajawal:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/rtl.css">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1 data-en="Rizq Al-Hawanem" data-ar="رزق الهوانم">رزق الهوانم</h1>
+                </div>
+                
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                        <li><a href="#shop" data-en="Shop" data-ar="المتجر">Shop</a></li>
+                        <li><a href="#impact" data-en="Our Impact" data-ar="تأثيرنا">Our Impact</a></li>
+                        <li><a href="#artisans" data-en="Artisans" data-ar="الحرفيات">Artisans</a></li>
+                        <li><a href="#join-us" data-en="Join Us" data-ar="انضمي لنا">Join Us</a></li>
+                        <li><a href="#donate" data-en="Donate" data-ar="تبرع">Donate</a></li>
+                        <li><a href="#volunteer" data-en="Volunteer" data-ar="تطوع">Volunteer</a></li>
+                        <li><a href="#blog" data-en="Stories" data-ar="القصص">Stories</a></li>
+                        <li><a href="#contact" data-en="Contact" data-ar="اتصل">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="language-switcher">
+                        <button id="lang-toggle" class="lang-btn">
+                            <span id="lang-text">EN</span>
+                        </button>
+                    </div>
+                    <div class="cart-icon" id="cart-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="m1 1 4 4 4.4 10.8a2 2 0 0 0 1.9 1.2h9.7a2 2 0 0 0 1.9-1.2L23 6H6"></path>
+                        </svg>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </div>
+                    <button class="menu-toggle" id="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <img src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Egyptian artisan at work" loading="eager">
+            </div>
+            <div class="hero-content">
+                <div class="container">
+                    <h1 class="hero-title" data-en="Empowering Women Through Sustainable Craft" data-ar="تمكين المرأة من خلال الحرف المستدامة">
+                        Empowering Women Through Sustainable Craft
+                    </h1>
+                    <p class="hero-subtitle" data-en="Transforming donated textiles into beautiful handmade products while creating economic opportunities for rural Egyptian women" data-ar="تحويل المنسوجات المتبرع بها إلى منتجات يدوية جميلة مع خلق فرص اقتصادية للمرأة الريفية المصرية">
+                        Transforming donated textiles into beautiful handmade products while creating economic opportunities for rural Egyptian women
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="scrollToSection('shop')" data-en="Shop Now" data-ar="تسوق الآن">Shop Now</button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('donate')" data-en="Donate Today" data-ar="تبرع اليوم">Donate Today</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section id="impact-overview" class="impact-overview">
+            <div class="container">
+                <h2 class="text-reveal" data-en="Our Impact at a Glance" data-ar="تأثيرنا في لمحة">Our Impact at a Glance</h2>
+                <div class="impact-grid" id="impact-metrics">
+                    <!-- Metrics will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section id="shop" class="featured-products">
+            <div class="container">
+                <h2 class="text-reveal" data-en="Featured Products" data-ar="المنتجات المميزة">Featured Products</h2>
+                <div class="products-grid" id="featured-products">
+                    <!-- Products will be loaded dynamically -->
+                </div>
+                <div class="section-actions">
+                    <button class="btn btn-outline" onclick="loadAllProducts()" data-en="View All Products" data-ar="عرض جميع المنتجات">View All Products</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Products (Hidden by default) -->
+        <section id="all-products" class="all-products" style="display: none;">
+            <div class="container">
+                <h2 data-en="All Products" data-ar="جميع المنتجات">All Products</h2>
+                <div class="products-grid" id="all-products-grid">
+                    <!-- All products will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Stories -->
+        <section id="impact" class="impact-section">
+            <div class="container">
+                <h2 class="text-reveal" data-en="Our Impact & Stories" data-ar="تأثيرنا وقصصنا">Our Impact & Stories</h2>
+                <div class="impact-content">
+                    <div class="impact-stats" id="detailed-impact">
+                        <!-- Detailed impact stats will be loaded -->
+                    </div>
+                    <div class="campaign-progress glass">
+                        <h3 data-en="Current Campaign" data-ar="الحملة الحالية">Current Campaign</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="campaign-progress"></div>
+                        </div>
+                        <div class="progress-text">
+                            <span id="raised-amount">0</span> / <span id="goal-amount">0</span> EGP
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artisans Section -->
+        <section id="artisans" class="artisans-section">
+            <div class="container">
+                <h2 class="text-reveal" data-en="Meet Our Artisans" data-ar="تعرف على حرفياتنا">Meet Our Artisans</h2>
+                <div class="artisans-grid" id="artisans-grid">
+                    <!-- Artisans will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Us Section - For Women to Start Working -->
+        <section id="join-us" class="join-us-section">
+            <div class="container">
+                <h2 class="text-reveal" data-en="Join Our Family of Artisans" data-ar="انضمي لعائلة الحرفيات">انضمي لعائلة الحرفيات</h2>
+                <p class="section-description" data-en="Are you a skilled woman looking for a meaningful way to earn income from home? Join our community of talented artisans and be part of a movement that empowers women while preserving traditional crafts." data-ar="هل أنت امرأة ماهرة تبحثين عن طريقة مجدية لكسب الدخل من المنزل؟ انضمي لمجتمع الحرفيات الموهوبات وكوني جزءًا من حركة تمكن المرأة مع الحفاظ على الحرف التقليدية.">
+                    هل أنت امرأة ماهرة تبحثين عن طريقة مجدية لكسب الدخل من المنزل؟ انضمي لمجتمع الحرفيات الموهوبات وكوني جزءًا من حركة تمكن المرأة مع الحفاظ على الحرف التقليدية.
+                </p>
+                
+                <div class="join-benefits">
+                    <div class="benefit-card card-modern">
+                        <div class="benefit-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 data-en="Flexible Working Hours" data-ar="ساعات عمل مرنة">ساعات عمل مرنة</h3>
+                        <p data-en="Work from home at your own pace and schedule that fits your life" data-ar="اعملي من المنزل بالوتيرة والجدول الزمني الذي يناسب حياتك">اعملي من المنزل بالوتيرة والجدول الزمني الذي يناسب حياتك</p>
+                    </div>
+                    
+                    <div class="benefit-card card-modern">
+                        <div class="benefit-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <point x="12" y="17"/>
+                            </svg>
+                        </div>
+                        <h3 data-en="Skills Training" data-ar="تدريب المهارات">تدريب المهارات</h3>
+                        <p data-en="Free training and skill development to enhance your crafting abilities" data-ar="تدريب مجاني وتطوير المهارات لتعزيز قدراتك الحرفية">تدريب مجاني وتطوير المهارات لتعزيز قدراتك الحرفية</p>
+                    </div>
+                    
+                    <div class="benefit-card card-modern">
+                        <div class="benefit-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <h3 data-en="Fair Compensation" data-ar="أجر عادل">أجر عادل</h3>
+                        <p data-en="Competitive pricing for your handmade products with timely payments" data-ar="أسعار تنافسية لمنتجاتك اليدوية مع مدفوعات في الوقت المحدد">أسعار تنافسية لمنتجاتك اليدوية مع مدفوعات في الوقت المحدد</p>
+                    </div>
+                    
+                    <div class="benefit-card card-modern">
+                        <div class="benefit-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 data-en="Supportive Community" data-ar="مجتمع داعم">مجتمع داعم</h3>
+                        <p data-en="Join a network of women supporting each other's growth and success" data-ar="انضمي لشبكة من النساء اللواتي يدعمن نمو ونجاح بعضهن البعض">انضمي لشبكة من النساء اللواتي يدعمن نمو ونجاح بعضهن البعض</p>
+                    </div>
+                </div>
+                
+                <div class="requirements-section">
+                    <h3 data-en="What We're Looking For" data-ar="ما نبحث عنه">ما نبحث عنه</h3>
+                    <div class="requirements-grid">
+                        <div class="requirement-item">
+                            <span class="requirement-icon">✨</span>
+                            <span data-en="Basic sewing or crafting skills" data-ar="مهارات أساسية في الخياطة أو الحرف اليدوية">مهارات أساسية في الخياطة أو الحرف اليدوية</span>
+                        </div>
+                        <div class="requirement-item">
+                            <span class="requirement-icon">💪</span>
+                            <span data-en="Dedication to quality and detail" data-ar="التفاني في الجودة والتفاصيل">التفاني في الجودة والتفاصيل</span>
+                        </div>
+                        <div class="requirement-item">
+                            <span class="requirement-icon">🏠</span>
+                            <span data-en="Comfortable workspace at home" data-ar="مساحة عمل مريحة في المنزل">مساحة عمل مريحة في المنزل</span>
+                        </div>
+                        <div class="requirement-item">
+                            <span class="requirement-icon">📱</span>
+                            <span data-en="Basic communication skills" data-ar="مهارات تواصل أساسية">مهارات تواصل أساسية</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form id="join-artisan-form" class="join-form glass">
+                    <h3 data-en="Start Your Journey With Us" data-ar="ابدئي رحلتك معنا">ابدئي رحلتك معنا</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="artisan-name" placeholder="الاسم الكامل" required data-en-placeholder="Full Name" data-ar-placeholder="الاسم الكامل">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="artisan-phone" placeholder="رقم الهاتف" required data-en-placeholder="Phone Number" data-ar-placeholder="رقم الهاتف">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="email" id="artisan-email" placeholder="البريد الإلكتروني" data-en-placeholder="Email Address" data-ar-placeholder="البريد الإلكتروني">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="artisan-location" placeholder="المحافظة/المنطقة" required data-en-placeholder="Governorate/Area" data-ar-placeholder="المحافظة/المنطقة">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select id="artisan-skills" required>
+                            <option value="" data-en="Select your primary skill" data-ar="اختاري مهارتك الأساسية">اختاري مهارتك الأساسية</option>
+                            <option value="sewing" data-en="Sewing" data-ar="الخياطة">الخياطة</option>
+                            <option value="embroidery" data-en="Embroidery" data-ar="التطريز">التطريز</option>
+                            <option value="knitting" data-en="Knitting" data-ar="الحياكة">الحياكة</option>
+                            <option value="weaving" data-en="Weaving" data-ar="النسيج">النسيج</option>
+                            <option value="accessories" data-en="Accessories Making" data-ar="صناعة الإكسسوارات">صناعة الإكسسوارات</option>
+                            <option value="other" data-en="Other Crafts" data-ar="حرف أخرى">حرف أخرى</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="artisan-experience" placeholder="أخبرينا عن خبرتك في الحرف اليدوية وما يمكنك صنعه" rows="4" data-en-placeholder="Tell us about your experience in handicrafts and what you can make" data-ar-placeholder="أخبرينا عن خبرتك في الحرف اليدوية وما يمكنك صنعه"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="artisan-availability" placeholder="ما هو الوقت المتاح لديك للعمل؟ (ساعات في اليوم/الأسبوع)" rows="3" data-en-placeholder="What time do you have available for work? (hours per day/week)" data-ar-placeholder="ما هو الوقت المتاح لديك للعمل؟ (ساعات في اليوم/الأسبوع)"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary glow" data-en="Join Our Family" data-ar="انضمي لعائلتنا">انضمي لعائلتنا</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Donation Section -->
+        <section id="donate" class="donation-section">
+            <div class="container">
+                <h2 data-en="Support Our Mission" data-ar="ادعم مهمتنا">Support Our Mission</h2>
+                <div class="donation-tabs">
+                    <button class="tab-btn active" data-tab="financial" data-en="Financial Donation" data-ar="تبرع مالي">Financial Donation</button>
+                    <button class="tab-btn" data-tab="textile" data-en="Textile Donation" data-ar="تبرع بالمنسوجات">Textile Donation</button>
+                </div>
+                
+                <div class="tab-content active" id="financial-tab">
+                    <form id="donation-form" class="donation-form">
+                        <div class="amount-selection">
+                            <h3 data-en="Select Amount" data-ar="اختر المبلغ">Select Amount</h3>
+                            <div class="amount-buttons">
+                                <button type="button" class="amount-btn" data-amount="100">100 EGP</button>
+                                <button type="button" class="amount-btn" data-amount="250">250 EGP</button>
+                                <button type="button" class="amount-btn" data-amount="500">500 EGP</button>
+                                <button type="button" class="amount-btn" data-amount="1000">1000 EGP</button>
+                            </div>
+                            <input type="number" id="custom-amount" placeholder="Custom amount" min="1">
+                        </div>
+                        
+                        <div class="donation-type">
+                            <label>
+                                <input type="radio" name="donation-type" value="one-time" checked>
+                                <span data-en="One-time" data-ar="مرة واحدة">One-time</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="donation-type" value="monthly">
+                                <span data-en="Monthly" data-ar="شهريا">Monthly</span>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="donor-name" placeholder="Full Name (Optional)" data-en-placeholder="Full Name (Optional)" data-ar-placeholder="الاسم الكامل (اختياري)">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="donor-email" placeholder="Email Address" required data-en-placeholder="Email Address" data-ar-placeholder="البريد الإلكتروني">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" data-en="Donate Now" data-ar="تبرع الآن">Donate Now</button>
+                    </form>
+                </div>
+                
+                <div class="tab-content" id="textile-tab">
+                    <div class="textile-donation">
+                        <h3 data-en="Donate Textiles" data-ar="تبرع بالمنسوجات">Donate Textiles</h3>
+                        <p data-en="Help us transform unused textiles into beautiful products. We accept clean cotton, linen, wool, and other natural fabrics." data-ar="ساعدنا في تحويل المنسوجات غير المستخدمة إلى منتجات جميلة. نحن نقبل القطن النظيف والكتان والصوف والأقمشة الطبيعية الأخرى.">
+                            Help us transform unused textiles into beautiful products. We accept clean cotton, linen, wool, and other natural fabrics.
+                        </p>
+                        
+                        <div class="collection-points" id="collection-points">
+                            <!-- Collection points will be loaded dynamically -->
+                        </div>
+                        
+                        <form id="textile-donation-form" class="contact-form">
+                            <h4 data-en="Bulk Donation Inquiry" data-ar="استفسار التبرع بالجملة">Bulk Donation Inquiry</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="textile-name" placeholder="Full Name" required data-en-placeholder="Full Name" data-ar-placeholder="الاسم الكامل">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="textile-email" placeholder="Email" required data-en-placeholder="Email" data-ar-placeholder="البريد الإلكتروني">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="tel" id="textile-phone" placeholder="Phone Number" data-en-placeholder="Phone Number" data-ar-placeholder="رقم الهاتف">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="textile-company" placeholder="Company (Optional)" data-en-placeholder="Company (Optional)" data-ar-placeholder="الشركة (اختياري)">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="textile-message" placeholder="Describe your donation (type of textiles, quantity, etc.)" rows="4" data-en-placeholder="Describe your donation (type of textiles, quantity, etc.)" data-ar-placeholder="صف تبرعك (نوع المنسوجات، الكمية، إلخ)"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" data-en="Submit Inquiry" data-ar="إرسال الاستفسار">Submit Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteer Section -->
+        <section id="volunteer" class="volunteer-section">
+            <div class="container">
+                <h2 data-en="Join Our Team" data-ar="انضم لفريقنا">Join Our Team</h2>
+                <p class="section-description" data-en="Be part of our mission to empower women and promote sustainable practices. We offer various volunteer opportunities." data-ar="كن جزءًا من مهمتنا لتمكين المرأة وتعزيز الممارسات المستدامة. نحن نقدم فرص تطوعية متنوعة.">
+                    Be part of our mission to empower women and promote sustainable practices. We offer various volunteer opportunities.
+                </p>
+                
+                <div class="volunteer-roles">
+                    <div class="role-card">
+                        <h3 data-en="Marketing & Social Media" data-ar="التسويق ووسائل التواصل الاجتماعي">Marketing & Social Media</h3>
+                        <p data-en="Help us spread awareness and showcase our impact through digital channels." data-ar="ساعدنا في نشر الوعي وعرض تأثيرنا من خلال القنوات الرقمية.">Help us spread awareness and showcase our impact through digital channels.</p>
+                    </div>
+                    <div class="role-card">
+                        <h3 data-en="Event Coordination" data-ar="تنسيق الفعاليات">Event Coordination</h3>
+                        <p data-en="Organize workshops, markets, and fundraising events to support our cause." data-ar="تنظيم ورش العمل والأسواق وفعاليات جمع التبرعات لدعم قضيتنا.">Organize workshops, markets, and fundraising events to support our cause.</p>
+                    </div>
+                    <div class="role-card">
+                        <h3 data-en="Training Support" data-ar="دعم التدريب">Training Support</h3>
+                        <p data-en="Assist in delivering vocational training programs to our artisan community." data-ar="المساعدة في تقديم برامج التدريب المهني لمجتمع الحرفيين لدينا.">Assist in delivering vocational training programs to our artisan community.</p>
+                    </div>
+                </div>
+                
+                <form id="volunteer-form" class="volunteer-form">
+                    <h3 data-en="Volunteer Application" data-ar="طلب التطوع">Volunteer Application</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="volunteer-name" placeholder="Full Name" required data-en-placeholder="Full Name" data-ar-placeholder="الاسم الكامل">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="volunteer-email" placeholder="Email" required data-en-placeholder="Email" data-ar-placeholder="البريد الإلكتروني">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="volunteer-phone" placeholder="Phone Number" data-en-placeholder="Phone Number" data-ar-placeholder="رقم الهاتف">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="volunteer-skills" placeholder="Skills & Experience" data-en-placeholder="Skills & Experience" data-ar-placeholder="المهارات والخبرة">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="volunteer-availability" placeholder="Availability (days, hours per week)" rows="3" data-en-placeholder="Availability (days, hours per week)" data-ar-placeholder="التوفر (الأيام، الساعات في الأسبوع)"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="volunteer-message" placeholder="Why do you want to volunteer with us?" rows="4" data-en-placeholder="Why do you want to volunteer with us?" data-ar-placeholder="لماذا تريد التطوع معنا؟"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-en="Submit Application" data-ar="إرسال الطلب">Submit Application</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section gradient-bg">
+            <div class="container">
+                <h2 class="text-reveal neon" data-en="Latest Stories" data-ar="أحدث القصص">Latest Stories</h2>
+                <div class="blog-grid" id="blog-grid">
+                    <!-- Blog posts will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="text-reveal" data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info card-modern">
+                        <div class="contact-item">
+                            <h3 data-en="Email" data-ar="البريد الإلكتروني">Email</h3>
+                            <p>info@handmadebyegypt.org</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3 data-en="Phone" data-ar="الهاتف">Phone</h3>
+                            <p>+20 123 456 7890</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3 data-en="Address" data-ar="العنوان">Address</h3>
+                            <p data-en="Cairo, Egypt" data-ar="القاهرة، مصر">Cairo, Egypt</p>
+                        </div>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form glass">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="contact-name" placeholder="Full Name" required data-en-placeholder="Full Name" data-ar-placeholder="الاسم الكامل">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="contact-email" placeholder="Email" required data-en-placeholder="Email" data-ar-placeholder="البريد الإلكتروني">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contact-message" placeholder="Your Message" rows="5" required data-en-placeholder="Your Message" data-ar-placeholder="رسالتك"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary glow" data-en="Send Message" data-ar="إرسال الرسالة">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-en="Rizq Al-Hawanem" data-ar="رزق الهوانم">رزق الهوانم</h3>
+                    <p data-en="Empowering Egyptian women through sustainable handmade crafts and meaningful work opportunities." data-ar="تمكين المرأة المصرية من خلال الحرف اليدوية المستدامة وفرص العمل المجدية.">
+                        تمكين المرأة المصرية من خلال الحرف اليدوية المستدامة وفرص العمل المجدية.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4>
+                    <ul>
+                        <li><a href="#shop" data-en="Shop" data-ar="المتجر">Shop</a></li>
+                        <li><a href="#impact" data-en="Our Impact" data-ar="تأثيرنا">Our Impact</a></li>
+                        <li><a href="#join-us" data-en="Join Us" data-ar="انضمي لنا">Join Us</a></li>
+                        <li><a href="#donate" data-en="Donate" data-ar="تبرع">Donate</a></li>
+                        <li><a href="#volunteer" data-en="Volunteer" data-ar="تطوع">Volunteer</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Contact" data-ar="اتصل">Contact</h4>
+                    <p>info@rizqalhawanem.org</p>
+                    <p>+20 123 456 7890</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-en="Newsletter" data-ar="النشرة الإخبارية">Newsletter</h4>
+                    <form id="newsletter-form">
+                        <div class="newsletter-input">
+                            <input type="email" id="newsletter-email" placeholder="أدخل بريدك الإلكتروني" required data-en-placeholder="Enter your email" data-ar-placeholder="أدخل بريدك الإلكتروني">
+                            <button type="submit" class="btn btn-primary" data-en="Subscribe" data-ar="اشترك">اشترك</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span data-en="Rizq Al-Hawanem" data-ar="رزق الهوانم">رزق الهوانم</span>. <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">جميع الحقوق محفوظة.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 data-en="Shopping Cart" data-ar="عربة التسوق">Shopping Cart</h3>
+                <button class="close-modal" onclick="closeCart()">&times;</button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong data-en="Total: " data-ar="المجموع: ">Total: </strong>
+                    <span id="cart-total">0 EGP</span>
+                </div>
+                <div class="cart-actions">
+                    <button class="btn btn-outline" onclick="closeCart()" data-en="Continue Shopping" data-ar="متابعة التسوق">Continue Shopping</button>
+                    <button class="btn btn-primary" onclick="proceedToCheckout()" data-en="Checkout" data-ar="الدفع">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content product-modal-content">
+            <!-- Product details will be loaded here -->
+        </div>
+    </div>
+
+    <!-- Success/Error Messages -->
+    <div id="message-container" class="message-container"></div>
+
+    <!-- GSAP Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    
+    <!-- Scripts -->
+    <script src="js/mockData.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

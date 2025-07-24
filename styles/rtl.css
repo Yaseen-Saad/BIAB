@@ -1,0 +1,277 @@
+/* RTL (Arabic) Styles */
+[dir="rtl"] {
+    font-family: var(--font-body-ar);
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+    font-family: var(--font-heading-ar);
+}
+
+/* Header RTL */
+[dir="rtl"] .header-content {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-list {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .header-actions {
+    flex-direction: row-reverse;
+}
+
+/* Hero RTL */
+[dir="rtl"] .hero-content {
+    text-align: center; /* Keep center alignment for hero */
+}
+
+[dir="rtl"] .hero-actions {
+    flex-direction: row-reverse;
+}
+
+/* Grid layouts RTL */
+[dir="rtl"] .impact-grid,
+[dir="rtl"] .products-grid,
+[dir="rtl"] .artisans-grid,
+[dir="rtl"] .volunteer-roles,
+[dir="rtl"] .blog-grid {
+    direction: rtl;
+}
+
+/* Forms RTL */
+[dir="rtl"] .form-row {
+    direction: rtl;
+}
+
+[dir="rtl"] .form-group input,
+[dir="rtl"] .form-group textarea,
+[dir="rtl"] .form-group select {
+    text-align: right;
+    direction: rtl;
+}
+
+[dir="rtl"] .form-group input[type="email"],
+[dir="rtl"] .form-group input[type="url"] {
+    text-align: left;
+    direction: ltr;
+}
+
+/* Donation tabs RTL */
+[dir="rtl"] .donation-tabs {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .amount-buttons {
+    direction: rtl;
+}
+
+[dir="rtl"] .donation-type {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .donation-type label {
+    flex-direction: row-reverse;
+}
+
+/* Impact content RTL */
+[dir="rtl"] .impact-content {
+    direction: rtl;
+}
+
+[dir="rtl"] .impact-stats {
+    direction: rtl;
+}
+
+/* Contact content RTL */
+[dir="rtl"] .contact-content {
+    direction: rtl;
+}
+
+/* Footer RTL */
+[dir="rtl"] .footer-content {
+    direction: rtl;
+}
+
+[dir="rtl"] .newsletter-input {
+    flex-direction: row-reverse;
+}
+
+/* Cart RTL */
+[dir="rtl"] .cart-item {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .cart-item-controls {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .cart-actions {
+    flex-direction: row-reverse;
+}
+
+/* Product detail RTL */
+[dir="rtl"] .product-detail {
+    direction: rtl;
+}
+
+[dir="rtl"] .product-thumbnails {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .quantity-selector {
+    flex-direction: row-reverse;
+}
+
+/* Modal RTL */
+[dir="rtl"] .modal-header {
+    flex-direction: row-reverse;
+}
+
+/* Checkout RTL */
+[dir="rtl"] .checkout-steps {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .order-item {
+    flex-direction: row-reverse;
+}
+
+/* Collection points RTL */
+[dir="rtl"] .collection-point {
+    text-align: right;
+}
+
+/* Blog RTL */
+[dir="rtl"] .blog-content {
+    text-align: right;
+}
+
+/* Language specific adjustments */
+[dir="rtl"] .hero-title,
+[dir="rtl"] .hero-subtitle {
+    text-align: center; /* Keep hero text centered */
+}
+
+[dir="rtl"] section h2 {
+    text-align: center; /* Keep section headings centered */
+}
+
+[dir="rtl"] .section-description {
+    text-align: center; /* Keep section descriptions centered */
+}
+
+[dir="rtl"] .impact-metric,
+[dir="rtl"] .artisan-card,
+[dir="rtl"] .role-card {
+    text-align: center; /* Keep cards centered */
+}
+
+/* Navigation RTL adjustments */
+[dir="rtl"] .nav-list a {
+    text-align: right;
+}
+
+/* Button adjustments RTL */
+[dir="rtl"] .btn {
+    direction: rtl;
+}
+
+/* Message container RTL */
+[dir="rtl"] .message-container {
+    right: auto;
+    left: var(--spacing-md);
+}
+
+/* Specific text alignment overrides */
+[dir="rtl"] .product-info,
+[dir="rtl"] .blog-content,
+[dir="rtl"] .contact-item,
+[dir="rtl"] .footer-section {
+    text-align: right;
+}
+
+[dir="rtl"] .product-name,
+[dir="rtl"] .product-price,
+[dir="rtl"] .blog-title,
+[dir="rtl"] .artisan-name {
+    text-align: right;
+}
+
+/* Form label alignment */
+[dir="rtl"] .form-group label {
+    text-align: right;
+}
+
+/* Cart total RTL */
+[dir="rtl"] .cart-total,
+[dir="rtl"] .progress-text {
+    text-align: center;
+}
+
+/* Responsive RTL adjustments */
+@media (max-width: 768px) {
+    [dir="rtl"] .nav {
+        text-align: right;
+    }
+    
+    [dir="rtl"] .nav-list {
+        flex-direction: column;
+    }
+    
+    [dir="rtl"] .hero-actions {
+        flex-direction: column;
+    }
+    
+    [dir="rtl"] .donation-tabs {
+        flex-direction: column;
+    }
+    
+    [dir="rtl"] .donation-type {
+        flex-direction: column;
+    }
+    
+    [dir="rtl"] .cart-actions {
+        flex-direction: column;
+    }
+    
+    [dir="rtl"] .newsletter-input {
+        flex-direction: column;
+    }
+    
+    [dir="rtl"] .checkout-steps {
+        flex-direction: column;
+    }
+}
+
+/* Number and currency formatting RTL */
+[dir="rtl"] .metric-number,
+[dir="rtl"] .stat-number,
+[dir="rtl"] .product-price,
+[dir="rtl"] .cart-total,
+[dir="rtl"] .progress-text {
+    direction: ltr; /* Keep numbers LTR for readability */
+    text-align: center;
+}
+
+/* Email inputs always LTR */
+[dir="rtl"] input[type="email"] {
+    direction: ltr;
+    text-align: left;
+}
+
+/* URL inputs always LTR */
+[dir="rtl"] input[type="url"] {
+    direction: ltr;
+    text-align: left;
+}
+
+/* Phone inputs can be RTL */
+[dir="rtl"] input[type="tel"] {
+    direction: rtl;
+    text-align: right;
+}
